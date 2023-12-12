@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Numbers to Words</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+J2Wk5vqXn3Fm/z2N1r8f6VZJ4T3Hdvh4kXG1j4fZ6IsU2f5" crossorigin="anonymous"></script>
+
+    </head>
+    <body class="bg-light">
+        <div class="col-md-6 m-auto mt-5">
+            <form class="form-control border shadow rounded-2 p-4">
+                <div class="mb-3">
+                  <label class="form-label">Amount in Rupees</label>
+                  <div class="input-group flex-nowrap">
+                    <span class="input-group-text">₹</span>
+                    <input id="amountInput" type="number" placeholder="enter amount" class="form-control">
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Amount In Words</label>
+                  <div class="input-group flex-nowrap">
+                    <span class="input-group-text">In Words</span>
+                    <input id="amountInWordsOutput" type="text" class="form-control disable" readonly>
+                  </div>
+                </div>
+                <div class="py-3">
+                    <button type="button" onclick="convertAmountToWords()" class="btn btn-primary">Convert</button>
+                </div>
+              </form>
+        </div>
+
+        <script src="AmountToWords.js"></script>
+    </body>
+</html>
